@@ -32,5 +32,5 @@
             </table>
             <br>
             <a href="/siswa/insert" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">+ Tambah Siswa Baru</a>
-
+            
 @stop
