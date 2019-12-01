@@ -27,7 +27,7 @@ class SiswaController extends Controller
             'email' => $request->email
         ]);
 
-        return redirect('/siswa');
+        return redirect('/siswa')->with('status', 'Record berhasil dibuat!');
     }
 
     public function edit($id)
@@ -44,13 +44,13 @@ class SiswaController extends Controller
             'email' => $request->email
         ]);
 
-        return redirect('/siswa');
+        return redirect('/siswa')->with('status', 'Record berhasil disunting!');
     }
 
     public function delete($id)
     {
         DB::table('siswa')->where('id',$id)->delete();
 
-        return redirect('/siswa');
+        return redirect('/siswa')->with('status', 'Record berhasil dihapus!');
     }
 }
